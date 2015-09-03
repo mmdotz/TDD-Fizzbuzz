@@ -1,0 +1,36 @@
+See Justin's Notes Week2/Day3 Sept 2, 2015
+
+--have conversational ability on at least the first 3 topics: --
+Priniciples: SOLID - goals to shoot for
+S- (SRP) Single responsibility (reasons to change)
+  methods may have too many responsibilities, separate actions. Don't clutter methods, they should do one thing.
+
+O- (OCP) Open/Close principle - every class should be open for extension (sub-funcitionality) don't make everything private, but Close: don't be monkeying around in someone else's code, (clone it and make changes?)
+
+L- (LSP) Liskof Substitution principle - Any subclass should be interchangable for its parent class
+  Cat < Kitten, but can't sub Kitten for Cat, order of specificity counts! (!= Kitten < Cat)
+  ex: Square is like a Rectangle but Rectangle has more specific measurements (l and w), whereas you can just call width (or length) for Square. All Rectangles are squares but not all Squares are rectangles.
+
+I- (ISP) Interface Segregation Principle - when you interface with something that doesn't belong to you, you should have a buffer. Potential for problems. When you are messing with methods, you create points for break, wehn it's just input/output, you can't. Create a class to manipulate i/o
+
+D- (DIP) Dependency Inversion Principle - instead of hardcoding what i need, make an argument instead. Make arguments for your methods. Simpler in concept but hard in practice. Hard to keep track of what your variables are if they are coded all over. Pass them in when you need them. Eliminate "state" (instance) when possible. Maintain readability.
+
+Immutable objects - don't change (like a deck of cards), have class but no variables.
+
+Patterns: some are Structural, Design, Implentation
+
+Decorator: decorate an object with new methods, separating concerns. The part of the code that shows to the screen is separate from the internal code.
+
+Antipatterns : how to go from a problem to a bad solution. A well formulated AntiPattern also tells you why the bad solution looks attractive (e.g. it actually works in some narrow context), why it turns out to be bad, and what positive patterns are applicable in its stead.
+
+Value objects: a class without behavior, like creating a card from a deck.
+
+
+
+
+
+
+
+
+
+
